@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+
+        <div class="header">
+            Course Registration System
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+        
+        <div class="container">
+        
+            <div class="card">
+                <h3>Total Credits Registered: <span id="credits">0</span></h3>
+                <h3>Max Credit Limit: <span id="maxCredits">0</span></h3>
+            </div>
+        
+            <div class="card">
+                <h3>Available Courses</h3>
+                <ul id="courseList"></ul>
+            </div>
+        
+            <div class="card">
+                <h3>Registered Courses</h3>
+                <ul id="registeredList"></ul>
+            </div>
+        
+        </div>
+        
+        <script src="courses.js"></script>
+        
+        </body>
+ 
+</html>

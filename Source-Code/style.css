@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4ff, #fef9ff);
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #4f46e5, #06b6d4);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Logout button */
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: #ef4444;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* List items */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f9fafb;
+}
+
+/* Buttons */
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(45deg, #3b82f6, #6366f1);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #2563eb, #4f46e5);
+}
+
+/* Drop button */
+button[onclick^="drop"] {
+    background: linear-gradient(45deg, #ef4444, #f97316);
+}
+
+/* Credits highlight */
+span {
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+/* LOGIN PAGE */
+.login-box {
+    width: 90%;
+    max-width: 450px;
+    padding: 40px;
+    margin: 120px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #4f46e5;
+}
+
+.login-box input {
+    width: 95%;
+    padding: 14px;
+    margin: 16px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.login-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Background circles (optional cool effect) */
+body::before {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: #c7d2fe;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background: #fbcfe8;
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+    z-index: -1;
+}
